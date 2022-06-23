@@ -24,9 +24,9 @@ int main()
 		do
 		{	
 			count=0;
-			for(i=0;i<n;i++){
-				for(j=0;j<n;j++){
-					for(k=0;k<n;k++){
+			for(i=0;i<n;i++){  					// for source
+				for(j=0;j<n;j++){ 				// for distance from source
+					for(k=0;k<n;k++){ 			// for comparison between distance
 						if(router[i].distance[j]>distance_mat[i][k]+router[k].distance[j])
 						{
 							router[i].distance[j]=router[i].distance[k]+router[k].distance[j];
