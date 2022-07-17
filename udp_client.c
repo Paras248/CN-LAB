@@ -29,7 +29,7 @@ int main(void){
     
     // Get input from the user:
     printf("Enter message: ");
-    gets(client_message);
+    scanf("%s", client_message);
     
     // Send the message to server:
     if(sendto(socket_desc, client_message, strlen(client_message), 0,
